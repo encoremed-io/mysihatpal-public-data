@@ -1,0 +1,898 @@
+[
+	{
+		"code": "KPWLV",
+		"name": "Klinik Pakar Wanita Liu & Vincent Sdn Bhd",
+		"state": "Melaka",
+		"country": "MY",
+		"specialities": ["Obstetrics & Gynaecology"]
+	},
+	{
+		"code": "BSC",
+		"name": "Bagan Specialist Centre",
+		"state": "Penang",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "ORIENTAL",
+		"name": "Oriental Melaka Straits Medical Centre",
+		"state": "Melaka",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "SINSS2",
+		"name": "SIN Osteopathic (SS2)",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Osteopathy"]
+	},
+	{
+		"code": "TAIPEITCM",
+		"name": "台北中医院 Taipei TCM Medical Centre",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Traditional Chinese Medicine"]
+	},
+	{
+		"code": "KPJIPOH",
+		"name": "Ipoh Specialist Hospital",
+		"state": "Perak",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "EVERHEALTHY",
+		"name": "Everhealthy Care Centre 人人保健医疗中心",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Traditional Chinese Medicine"]
+	},
+	{
+		"code": "REMEDIC",
+		"name": "KLINIK REMEDIC KANGAR",
+		"state": "Perlis",
+		"country": "MY",
+		"specialities": ["Family Medicine"]
+	},
+	{
+		"code": "MYTHMEDIX",
+		"name": "MYTHMEDIX TCM 麦丝中医",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Traditional Chinese Medicine"]
+	},
+	{
+		"code": "SUNFERT",
+		"name": "Sunfert International",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Fertility"]
+	},
+	{
+		"code": "ACUMED",
+		"name": "AcuMed Medical Group (Raffles Place)",
+		"state": "Singapore",
+		"country": "MY",
+		"specialities": ["Primary Care"]
+	},
+	{
+		"code": "kmbalakong",
+		"name": "Klinik Mediviron Balakong",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Primary Care"]
+	},
+	{
+		"code": "drmedilase",
+		"name": "DRs Medi Lase",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Dermatology", "Aesthetic Medicine"]
+	},
+	{
+		"code": "hidayah",
+		"name": "Poliklinik Hidayah",
+		"state": "Melaka",
+		"country": "MY",
+		"specialities": ["Primary Care"]
+	},
+	{
+		"code": "smc",
+		"name": "Sunway Medical Centre",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "dr.ivan",
+		"name": "Dr. Ivan Lee Kick Kit (KPJ Seremban Specialist Hospital)",
+		"state": "Negeri Sembilan",
+		"country": "MY",
+		"specialities": ["Obstetrics & Gynaecology"]
+	},
+	{
+		"code": "agnesheng",
+		"name": "Agnes Heng Dermatology",
+		"state": "Perak",
+		"country": "MY",
+		"specialities": ["Dermatology"]
+	},
+	{
+		"code": "teymaternity",
+		"name": "Tey Maternity Specialist & Gynae Centre",
+		"state": "Johor",
+		"country": "MY",
+		"specialities": ["Obstetrics & Gynaecology"]
+	},
+	{
+		"code": "dr.andrew",
+		"name": "Andrew Ho Eye Specialist Clinic",
+		"state": "Perak",
+		"country": "MY",
+		"specialities": ["Ophthalmology"]
+	},
+	{
+		"code": "fmgc",
+		"name": "Fetal Medicine & Gynaecology Centre",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Obstetrics & Gynaecology", "Fetal Medicine"]
+	},
+	{
+		"code": "KLW",
+		"name": "Klinik Lan Dan Wong 蓝，黄医务所",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Primary Care"]
+	},
+	{
+		"code": "bumiraya",
+		"name": "BUMIRAYA MOTOR SDN BHD",
+		"state": "Melaka",
+		"country": "MY",
+		"specialities": ["Other"]
+	},
+	{
+		"code": "LDS",
+		"name": "Lee Dental Surgery",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Dentistry"]
+	},
+	{
+		"code": "tzuchi",
+		"name": "Tzu Chi",
+		"state": "Penang",
+		"country": "MY",
+		"specialities": ["Other"]
+	},
+	{
+		"code": "drchan",
+		"name": "Klinik Pakar Kanak-Kanak Dr. Chan",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Pediatrics"]
+	},
+	{
+		"code": "limdental",
+		"name": "Lim Dental Surgery Sdn Bhd",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Dentistry"]
+	},
+	{
+		"code": "drevelynpang",
+		"name": "Klinik Pakar Wanita Dr Evelyn Pang",
+		"state": "Negeri Sembilan",
+		"country": "MY",
+		"specialities": ["Obstetrics & Gynaecology"]
+	},
+	{
+		"code": "siowent",
+		"name": "蕭耳鼻喉頭頸專科 SIOW EAR NOSE THROAT & SPECIALIST",
+		"state": "Johor",
+		"country": "MY",
+		"specialities": ["ENT"]
+	},
+	{
+		"code": "KPJTAIPING",
+		"name": "KPJ Taiping Medical Centre",
+		"state": "Perak",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "AdrielEyeHealth",
+		"name": "Adriel Eye Health",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Ophthalmology"]
+	},
+	{
+		"code": "alson",
+		"name": "CUTQ power by Encore Med Sdn Bhd",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Other"]
+	},
+	{
+		"code": "booknow",
+		"name": "CUTQ SDN BHD",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Other"]
+	},
+	{
+		"code": "SINKEPONG",
+		"name": "SIN Osteopathic (Kepong)",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Osteopathy"]
+	},
+	{
+		"code": "h2o",
+		"name": "H2o Hair Team Saloon",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Wellness"]
+	},
+	{
+		"code": "tuckming",
+		"name": "Kedai Ubat dan Runcit Tuck Ming",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Pharmacy"]
+	},
+	{
+		"code": "hippopokl",
+		"name": "Hippopo Baby Spa & Wellness",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Wellness", "Pediatrics"]
+	},
+	{
+		"code": "floordepot",
+		"name": "FLOOR DEPOT",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Other"]
+	},
+	{
+		"code": "kpjputeri",
+		"name": "Puteri Specialist Hospital",
+		"state": "Johor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "kpjsrimanjung",
+		"name": "KPJ Sri Manjung Specialist Centre",
+		"state": "Perak",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "mr.vege",
+		"name": "PH Global Enterprise",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Other"]
+	},
+	{
+		"code": "EMSFitness",
+		"name": "Technatives Bandar Utama",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Other"]
+	},
+	{
+		"code": "kpjkluang",
+		"name": "KPJ Kluang Specialist Hospital",
+		"state": "Johor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "kpjsentosa",
+		"name": "KPJ Sentosa KL Specialist Hospital",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "kpjpgsh",
+		"name": "KPJ Pasir Gudang Specialist Hospital",
+		"state": "Johor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "suryayogakuchai",
+		"name": "Surya Yoga Kuchai",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Wellness"]
+	},
+	{
+		"code": "TecNatives.BU",
+		"name": "TECNATIVES Malaysia",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Other"]
+	},
+	{
+		"code": "kpjmaharani",
+		"name": "KPJ Bandar Maharani Specialist Hospital",
+		"state": "Johor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "kpjdamansara",
+		"name": "KPJ Damansara Specialist Hospital",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "regency",
+		"name": "Regency Specialist Hospital",
+		"state": "Johor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "mahkotamedical",
+		"name": "Mahkota Medical Centre",
+		"state": "Melaka",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "kpjpenang",
+		"name": "KPJ Penang Specialist Hospital",
+		"state": "Penang",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "eka",
+		"name": "Eka Roots Hair Wellness S/B.",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Wellness"]
+	},
+	{
+		"code": "kpjdatoonn",
+		"name": "KPJ Bandar Dato' Onn Specialist Hospital",
+		"state": "Johor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "kpjjohor",
+		"name": "Johor Specialist Hospital",
+		"state": "Johor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "SMCV",
+		"name": "Sunway Medical Centre Velocity",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "PAH",
+		"name": "Penang Adventist Hospital",
+		"state": "Penang",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "kpjseremban",
+		"name": "KPJ Seremban Specialist Hospital",
+		"state": "Negeri Sembilan",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "kpjsibu",
+		"name": "KPJ Sibu Specialist Hospital",
+		"state": "Sarawak",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "abmc",
+		"name": "Anson Bay Medical Centre",
+		"state": "Perak",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "AHN",
+		"name": "Aurelius Hospital Nilai",
+		"state": "Negeri Sembilan",
+		"country": "MY",
+		"specialities": ["Multi-specialty", "Oncology"]
+	},
+	{
+		"code": "kpjkuching",
+		"name": "KPJ Kuching Specialist Hospital",
+		"state": "Sarawak",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "andorra",
+		"name": "Andorra Women & Children Hospital",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Obstetrics & Gynaecology", "Pediatrics"]
+	},
+	{
+		"code": "quillorthopaedic",
+		"name": "Quill Orthopaedic Specialist Centre",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Orthopedics"]
+	},
+	{
+		"code": "kpjcfskl",
+		"name": "KPJ Centre For Sight (KL)",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Ophthalmology"]
+	},
+	{
+		"code": "kpjkajang",
+		"name": "KPJ Kajang Specialist Hospital",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "kpjcfspj",
+		"name": "KPJ Centre For Sight (PJ)",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Ophthalmology"]
+	},
+	{
+		"code": "kpjcfsrawang",
+		"name": "KPJ Centre For Sight (Rawang)",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Ophthalmology"]
+	},
+	{
+		"code": "KPJPERDANA",
+		"name": "KPJ Perdana Specialist Hospital",
+		"state": "Kelantan",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "KPJBP",
+		"name": "KPJ Batu Pahat Specialist Hospital",
+		"state": "Johor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "KPJKMC",
+		"name": "Kedah Medical Centre",
+		"state": "Kedah",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "KPJDENTAL",
+		"name": "KPJ Dental",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Dentistry"]
+	},
+	{
+		"code": "KPJKUANTAN",
+		"name": "KPJ Kuantan Care & Wellness Centre",
+		"state": "Pahang",
+		"country": "MY",
+		"specialities": ["Wellness"]
+	},
+	{
+		"code": "KPJPERLIS",
+		"name": "KPJ Perlis Specialist Hospital",
+		"state": "Perlis",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "KPJSABAH",
+		"name": "KPJ Sabah Specialist Hospital",
+		"state": "Sabah",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "KPJTWKL",
+		"name": "Tawakkal Specialist Hospital",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "KPJTHC",
+		"name": "KPJ Tawakkal Health Centre",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Primary Care"]
+	},
+	{
+		"code": "KPJDAMAI",
+		"name": "KPJ Damai Wellness",
+		"state": "Sabah",
+		"country": "MY",
+		"specialities": ["Wellness"]
+	},
+	{
+		"code": "KPJMIRI",
+		"name": "KPJ Miri Specialist Hospital",
+		"state": "Sarawak",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "umra",
+		"name": "Hospital UMRA Shah Alam",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "kktanglin",
+		"name": "Klinik Kesihatan Tanglin",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Primary Care"]
+	},
+	{
+		"code": "kkpetalingbahagia",
+		"name": "Klinik Kesihatan Petaling Bahagia",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Primary Care"]
+	},
+	{
+		"code": "kkjinjang",
+		"name": "Klinik Kesihatan Jinjang",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Primary Care"]
+	},
+	{
+		"code": "kksentul",
+		"name": "Klinik Kesihatan Sentul",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Primary Care"]
+	},
+	{
+		"code": "kkbatu",
+		"name": "Klinik Kesihatan Batu Muda",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Primary Care"]
+	},
+	{
+		"code": "kkkelanajaya",
+		"name": "Klinik Kesihatan Kelana Jaya",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Primary Care"]
+	},
+	{
+		"code": "kkshahalamseksyen7",
+		"name": "Klinik Kesihatan Shah Alam Seksyen 7",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Primary Care"]
+	},
+	{
+		"code": "gleneagleskl",
+		"name": "Gleneagles Kuala Lumpur",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "PMC",
+		"name": "ParkCity Medical Centre",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "pantaiipoh",
+		"name": "Pantai Hospital Ipoh",
+		"state": "Perak",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "pantaimanjung",
+		"name": "Pantai Hospital Manjung",
+		"state": "Perak",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "pantaiklang",
+		"name": "Pantai Hospital Klang",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "pantaisungaipetani",
+		"name": "Pantai Hospital Sungai Petani",
+		"state": "Kedah",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "pantailagunamerbok",
+		"name": "Pantai Hospital Laguna Merbok",
+		"state": "Kedah",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "pantaicheras",
+		"name": "Pantai Hospital Cheras",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "pantaiampang",
+		"name": "Pantai Hospital Ampang",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "gleneaglespenang",
+		"name": "Gleneagles Hospital Penang",
+		"state": "Penang",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "gleneaglesjohor",
+		"name": "Gleneagles Hospital Medini Johor",
+		"state": "Johor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "gleneagleskk",
+		"name": "Gleneagles Kota Kinabalu",
+		"state": "Sabah",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "pantaiayerkeroh",
+		"name": "Pantai Hospital Melaka",
+		"state": "Melaka",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "pantaibp",
+		"name": "Pantai Hospital Batu Pahat",
+		"state": "Johor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "SJMC",
+		"name": "Subang Jaya Medical Centre",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "ADMC",
+		"name": "Ara Damansara Medical Centre",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "drliusenawang",
+		"name": "Klinik Pakar Kanak-Kanak Senawang",
+		"state": "Negeri Sembilan",
+		"country": "MY",
+		"specialities": ["Pediatrics"]
+	},
+	{
+		"code": "sopheafertility",
+		"name": "Sophea Fertility Centre (Petaling Jaya)",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Fertility"]
+	},
+	{
+		"code": "ivfkasih",
+		"name": "IVFkasih | Malaysia’s new ultra-low cost IVF programme",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Fertility"]
+	},
+	{
+		"code": "SUNFERTKUCHING",
+		"name": "Sunfert Kuching",
+		"state": "Sarawak",
+		"country": "MY",
+		"specialities": ["Fertility"]
+	},
+	{
+		"code": "SUNFERTIPOH",
+		"name": "Sunfert Ipoh",
+		"state": "Perak",
+		"country": "MY",
+		"specialities": ["Fertility"]
+	},
+	{
+		"code": "rspremierbintaro",
+		"name": "RS Premier Bintaro",
+		"state": "Banten",
+		"country": "ID",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "rspremierjatinegara",
+		"name": "RS Premier Jatinegara",
+		"state": "Jakarta",
+		"country": "ID",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "rspremiersurabaya",
+		"name": "RS Premier Surabaya",
+		"state": "Jawa Timur",
+		"country": "ID",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "cmh",
+		"name": "CMH Specialist Hospital",
+		"state": "Negeri Sembilan",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "putrabp",
+		"name": "Putra Specialist Hospital Batu Pahat",
+		"state": "Johor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "princecourt",
+		"name": "Prince Court Medical Centre",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "msu",
+		"name": "MSU Medical Centre",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "hidayahkrubong",
+		"name": "Poliklinik Hidayah Krubong",
+		"state": "Melaka",
+		"country": "MY",
+		"specialities": ["Primary Care"]
+	},
+	{
+		"code": "kbmc",
+		"name": "Kota Bharu Medical Centre",
+		"state": "Kelantan",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "imuhealthcare",
+		"name": "IMU Healthcare",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "thkd",
+		"name": "Thomson Hospital Kota Damansara",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "ttmcklcc",
+		"name": "Twin Towers Medical Clinic KLCC",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Primary Care"]
+	},
+	{
+		"code": "kpjacc",
+		"name": "KPJ Specialist & Healthcare Centre Kinrara",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "sbsc",
+		"name": "Singapore Breast Surgery Center Pte Ltd",
+		"state": "Singapore",
+		"country": "SG",
+		"specialities": ["Breast Surgery"]
+	},
+	{
+		"code": "hsb",
+		"name": "Hospital Seri Botani",
+		"state": "Perak",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "assunta",
+		"name": "Assunta Hospital",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "KPJDSH2",
+		"name": "KPJ Damansara Specialist Hospital 2",
+		"state": "Kuala Lumpur",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "Sophea",
+		"name": "Sophea Fertility Centre (Bangi)",
+		"state": "Petaling Jaya",
+		"country": "MY",
+		"specialities": ["Fertility"]
+	},
+	{
+		"code": "Aureliushospital",
+		"name": "Aurelius Hospital Pahang",
+		"state": "Pahang",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "KPJKS",
+		"name": "KPJ Kuala Selangor Specialist Hospital",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	},
+	{
+		"code": "HPICAS",
+		"name": "Hospital Picaso",
+		"state": "Selangor",
+		"country": "MY",
+		"specialities": ["Multi-specialty"]
+	}
+]
