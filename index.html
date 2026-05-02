@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MySihatPal Institutes Directory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-glow"></div>
+    <header class="hero">
+      <nav class="nav">
+        <span class="brand">MySihatPal</span>
+        <a class="nav-link" href="#directory">Directory</a>
+      </nav>
+      <div class="hero-content">
+        <div>
+          <p class="eyebrow">Encore Med • Institutes</p>
+          <h1>Find trusted care providers across Malaysia.</h1>
+          <p class="lead">
+            A clean, searchable landing page powered by the public MySihatPal
+            institutes list from Encore Med.
+          </p>
+          <div class="hero-actions">
+            <button class="cta" type="button" id="scrollToDirectory">
+              Explore directory
+            </button>
+            <span class="meta">Updated live from Encorem Med</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <span>Live stats</span>
+            <span class="pulse"></span>
+          </div>
+          <div class="stat-grid">
+            <div>
+              <p class="stat-label">Institutes</p>
+              <p class="stat-value" id="statTotal">--</p>
+            </div>
+            <div>
+              <p class="stat-label">States</p>
+              <p class="stat-value" id="statStates">--</p>
+            </div>
+            <div>
+              <p class="stat-label">Specialties</p>
+              <p class="stat-value" id="statSpecialties">--</p>
+            </div>
+          </div>
+          <p class="stat-note">Instantly filtered as you type.</p>
+        </div>
+      </div>
+    </header>
+
+    <main id="directory" class="directory">
+      <div class="section-header">
+        <div>
+          <h2>Institutes directory</h2>
+          <p class="muted">
+            Browse by name, state, or speciality. Data fetched from the Encore Med.
+          </p>
+        </div>
+        <div class="result-count" id="resultCount">Showing 0 of 0</div>
+      </div>
+
+      <div class="filters">
+        <label class="field">
+          <span>Search</span>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Search by name, code, or speciality"
+            autocomplete="off"
+          />
+        </label>
+        <label class="field">
+          <span>State</span>
+          <select id="stateFilter">
+            <option value="">All states</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Speciality</span>
+          <select id="specialityFilter">
+            <option value="">All specialities</option>
+          </select>
+        </label>
+      </div>
+
+      <section class="cards" id="cards"></section>
+      <p class="empty-state" id="emptyState" hidden>
+        No institutes match those filters. Try a different search.
+      </p>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Built for the MySihatPal public dataset. Data source:
+        <a
+          href="https://encoremed.io"
+          target="_blank"
+          rel="noreferrer"
+          >Encore Med</a
+        >.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
