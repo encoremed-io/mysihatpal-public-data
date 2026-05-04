@@ -1,5 +1,4 @@
-const DATA_URL =
-  "https://raw.githubusercontent.com/encoremed-io/mysihatpal-public-data/master/institutes.json";
+const DATA_URL = "https://raw.githubusercontent.com/encoremed-io/mysihatpal-public-data/master/institutes.json";
 
 const elements = {
   cards: document.getElementById("cards"),
@@ -16,11 +15,53 @@ const elements = {
 
 let dataset = [];
 
+const capturedParams = Array.from(
+  new URLSearchParams(window.location.search).entries()
+);
+
 const uniqueSorted = (values) =>
   Array.from(new Set(values)).sort((a, b) => a.localeCompare(b));
 
 const normalize = (value) => value.toLowerCase().trim();
 
+const buildBookingUrl = () => {
+  const bookingUrl = new URL(CONFIG.BOOKING_URL, window.location.origin);
+  capturedParams.forEach(([key, value]) => {
+    bookingUrl.searchParams.append(key, value);
+  });
+  return bookingUrl.toString();
+};
+
+const trackBookingClick = (item) => {
+  const bookingUrl = buildBookingUrl();
+  const queryPayload = {};
+
+  capturedParams.forEach(([key, value]) => {
+    if (!(key in queryPayload)) {
+      queryPayload[key] = value;
+    }
+  });
+
+  console.log("Megat: Sending click_to_booking event...");
+
+  gtag('event', 'click_to_booking', {
+    'institute_name': item.name,
+    'institute_code': item.code,
+    'institute_state': item.state,
+    ...queryPayload, // UTM data
+    'event_callback': () => {
+      // Pindah page HANYA bila data dah sampai ke Google
+      console.log("Megat: Event sent! Redirecting to Website C...");
+      window.location.href = bookingUrl;
+    }
+  });
+
+  setTimeout(() => {
+    window.location.href = bookingUrl;
+  }, 1000);
+};
+
+// 4. BINA FILTERS (STATE & SPECIALITY)
 const buildFilters = (items) => {
   const states = uniqueSorted(items.map((item) => item.state));
   const specialties = uniqueSorted(
@@ -34,10 +75,7 @@ const buildFilters = (items) => {
   elements.specialityFilter.innerHTML =
     '<option value="">All specialities</option>' +
     specialties
-      .map(
-        (speciality) =>
-          `<option value="${speciality}">${speciality}</option>`
-      )
+      .map((speciality) => `<option value="${speciality}">${speciality}</option>`)
       .join("");
 
   elements.statTotal.textContent = items.length.toString();
@@ -54,31 +92,28 @@ const renderCards = (items) => {
     card.className = "card";
     card.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
 
-    const title = document.createElement("h3");
-    title.textContent = item.name;
+    card.innerHTML = `
+      <h3>${item.name}</h3>
+      <div class="card-meta">
+        <span>${item.state}</span>
+        <span>${item.country}</span>
+      </div>
+      <div class="card-meta" id="tags-${index}"></div>
+      <span class="tag code-pill">${item.code}</span>
+      <button type="button" class="cta" id="btn-${index}">Book now</button>
+    `;
 
-    const meta = document.createElement("div");
-    meta.className = "card-meta";
-    meta.innerHTML = `<span>${item.state}</span><span>${item.country}</span>`;
-
-    const tags = document.createElement("div");
-    tags.className = "card-meta";
-
+    // Render Specialities Tags
+    const tagsContainer = card.querySelector(`#tags-${index}`);
     (item.specialities || []).forEach((speciality) => {
       const tag = document.createElement("span");
       tag.className = "tag";
       tag.textContent = speciality;
-      tags.appendChild(tag);
+      tagsContainer.appendChild(tag);
     });
 
-    const code = document.createElement("span");
-    code.className = "tag code-pill";
-    code.textContent = item.code;
+    card.querySelector(`#btn-${index}`).addEventListener("click", () => trackBookingClick(item));
 
-    card.appendChild(title);
-    card.appendChild(meta);
-    card.appendChild(tags);
-    card.appendChild(code);
     fragment.appendChild(card);
   });
 
@@ -105,9 +140,7 @@ const applyFilters = () => {
 
     const matchesSearch = searchTarget.includes(searchValue);
     const matchesState = !stateValue || item.state === stateValue;
-    const matchesSpeciality =
-      !specialityValue ||
-      (item.specialities || []).includes(specialityValue);
+    const matchesSpeciality = !specialityValue || (item.specialities || []).includes(specialityValue);
 
     return matchesSearch && matchesState && matchesSpeciality;
   });
@@ -118,19 +151,16 @@ const applyFilters = () => {
 const loadData = async () => {
   try {
     const response = await fetch(DATA_URL, { cache: "no-store" });
-    if (!response.ok) {
-      throw new Error("Failed to load institutes data.");
-    }
+    if (!response.ok) throw new Error("Failed to load institutes data.");
+    
     const data = await response.json();
     dataset = Array.isArray(data) ? data : [];
     buildFilters(dataset);
     renderCards(dataset);
   } catch (error) {
-    elements.cards.innerHTML = "";
-    elements.resultCount.textContent = "Unable to load data";
+    elements.cards.innerHTML = "<p>Unable to load data.</p>";
+    elements.resultCount.textContent = "Error";
     elements.emptyState.hidden = false;
-    elements.emptyState.textContent =
-      "Sorry, we could not load the public data right now.";
   }
 };
 

@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MySihatPal Institutes Directory</title>
+    
+    <!-- Load config -->
+    <script src="config.js"></script>
+
+    <!-- 1. GOOGLE TAG (GTAG.JS) - NATIVE GA4 SETUP -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1FVP3S48ST"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // Letak debug_mode: true supaya data masuk terus ke GA4 DebugView
+      gtag('config', 'G-1FVP3S48ST', { 
+        'debug_mode': true 
+      });
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,7 +48,7 @@
             <button class="cta" type="button" id="scrollToDirectory">
               Explore directory
             </button>
-            <span class="meta">Updated live from Encorem Med</span>
+            <span class="meta">Updated live from Encore Med</span>
           </div>
         </div>
         <div class="hero-card">
@@ -94,6 +111,7 @@
       </div>
 
       <section class="cards" id="cards"></section>
+
       <p class="empty-state" id="emptyState" hidden>
         No institutes match those filters. Try a different search.
       </p>
@@ -102,12 +120,7 @@
     <footer class="footer">
       <p>
         Built for the MySihatPal public dataset. Data source:
-        <a
-          href="https://encoremed.io"
-          target="_blank"
-          rel="noreferrer"
-          >Encore Med</a
-        >.
+        <a href="https://encoremed.io" target="_blank" rel="noreferrer">Encore Med</a>.
       </p>
     </footer>
 
