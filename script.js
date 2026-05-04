@@ -64,7 +64,7 @@ const normalize = (value) => value.toLowerCase().trim();
 const buildBookingUrl = (item) => {
   const bookingUrl = new URL(CONFIG.BOOKING_URL, window.location.origin);
   const basePath = bookingUrl.pathname.replace(/\/+$/, "");
-  const codePath = `/${(item?.code || "").trim().toLowerCase()}`;
+  const codePath = `/${(item?.code || "").trim()}`;
   bookingUrl.pathname = `${basePath}${codePath}`;
   capturedParams.forEach((value, key) => {
     bookingUrl.searchParams.set(key, value);
@@ -90,19 +90,22 @@ const trackBookingClick = (item) => {
   };
 
   if (typeof gtag === "function") {
-    gtag("event", "appointment_initiation", {
-      institute_name: item.name,
-      institute_code: item.code,
-      institute_state: item.state,
-      booking_url: bookingUrl,
-      ...queryPayload,
-      // Wait for GA4 to confirm receipt before redirecting to avoid data loss.
-      event_callback: () => {
-        redirectToBooking();
-      },
+    gtag("get", "G-1FVP3S48ST", "linker_param", (linkerParam) => {
+      const finalUrl = linkerParam ? `${bookingUrl}&${linkerParam}` : bookingUrl;
+      
+      console.log("Megat Local Test - Final URL with Linker:", finalUrl);
+
+      gtag("event", "appointment_initiation", {
+        institute_name: item.name,
+        institute_code: item.code,
+        event_callback: () => { window.location.href = finalUrl; }
+      });
+
+      // Safety timeout
+      setTimeout(() => { window.location.href = finalUrl; }, 1000);
     });
   } else {
-    redirectToBooking();
+    window.location.href = bookingUrl;
   }
 
   setTimeout(() => {
