@@ -61,8 +61,11 @@ const uniqueSorted = (values) =>
 
 const normalize = (value) => value.toLowerCase().trim();
 
-const buildBookingUrl = () => {
+const buildBookingUrl = (item) => {
   const bookingUrl = new URL(CONFIG.BOOKING_URL, window.location.origin);
+  const basePath = bookingUrl.pathname.replace(/\/+$/, "");
+  const codePath = `/${(item?.code || "").trim().toLowerCase()}`;
+  bookingUrl.pathname = `${basePath}${codePath}`;
   capturedParams.forEach((value, key) => {
     bookingUrl.searchParams.set(key, value);
   });
@@ -70,7 +73,7 @@ const buildBookingUrl = () => {
 };
 
 const trackBookingClick = (item) => {
-  const bookingUrl = buildBookingUrl();
+  const bookingUrl = buildBookingUrl(item);
   const queryPayload = {};
   let didRedirect = false;
 
