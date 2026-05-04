@@ -15,9 +15,46 @@ const elements = {
 
 let dataset = [];
 
-const capturedParams = Array.from(
-  new URLSearchParams(window.location.search).entries()
-);
+const TRACKING_KEYS = new Set([
+  "utm_source",
+  "utm_medium",
+  "utm_campaign",
+  "utm_id",
+  "utm_term",
+  "utm_content",
+  "gclid",
+]);
+
+const cleanSearchString = (search) => {
+  if (!search) return "";
+  const trimmed = search.trim();
+  if (!trimmed) return "";
+
+  // Normalize malformed query prefixes to a single leading "?" for clean parsing.
+  return trimmed
+    .replace(/^\?%3f/i, "?")
+    .replace(/^\?{2,}/, "?");
+};
+
+const getCapturedParams = () => {
+  const cleanedSearch = cleanSearchString(window.location.search);
+  const params = new URLSearchParams(cleanedSearch);
+  const cleaned = new Map();
+
+  for (const [key, value] of params.entries()) {
+    const cleanedValue = typeof value === "string" ? value.trim() : "";
+    if (!cleanedValue || cleanedValue.toLowerCase() === "undefined") {
+      continue;
+    }
+    if (!cleaned.has(key)) {
+      cleaned.set(key, cleanedValue);
+    }
+  }
+
+  return cleaned;
+};
+
+const capturedParams = getCapturedParams();
 
 const uniqueSorted = (values) =>
   Array.from(new Set(values)).sort((a, b) => a.localeCompare(b));
@@ -26,8 +63,8 @@ const normalize = (value) => value.toLowerCase().trim();
 
 const buildBookingUrl = () => {
   const bookingUrl = new URL(CONFIG.BOOKING_URL, window.location.origin);
-  capturedParams.forEach(([key, value]) => {
-    bookingUrl.searchParams.append(key, value);
+  capturedParams.forEach((value, key) => {
+    bookingUrl.searchParams.set(key, value);
   });
   return bookingUrl.toString();
 };
@@ -35,33 +72,41 @@ const buildBookingUrl = () => {
 const trackBookingClick = (item) => {
   const bookingUrl = buildBookingUrl();
   const queryPayload = {};
+  let didRedirect = false;
 
-  capturedParams.forEach(([key, value]) => {
-    if (!(key in queryPayload)) {
+  capturedParams.forEach((value, key) => {
+    if (TRACKING_KEYS.has(key)) {
       queryPayload[key] = value;
     }
   });
 
-  console.log("Megat: Sending click_to_booking event...");
+  const redirectToBooking = () => {
+    if (didRedirect) return;
+    didRedirect = true;
+    window.location.href = bookingUrl;
+  };
 
-  gtag('event', 'click_to_booking', {
-    'institute_name': item.name,
-    'institute_code': item.code,
-    'institute_state': item.state,
-    ...queryPayload, // UTM data
-    'event_callback': () => {
-      // Pindah page HANYA bila data dah sampai ke Google
-      console.log("Megat: Event sent! Redirecting to Website C...");
-      window.location.href = bookingUrl;
-    }
-  });
+  if (typeof gtag === "function") {
+    gtag("event", "appointment_initiation", {
+      institute_name: item.name,
+      institute_code: item.code,
+      institute_state: item.state,
+      booking_url: bookingUrl,
+      ...queryPayload,
+      // Wait for GA4 to confirm receipt before redirecting to avoid data loss.
+      event_callback: () => {
+        redirectToBooking();
+      },
+    });
+  } else {
+    redirectToBooking();
+  }
 
   setTimeout(() => {
-    window.location.href = bookingUrl;
+    redirectToBooking();
   }, 1000);
 };
 
-// 4. BINA FILTERS (STATE & SPECIALITY)
 const buildFilters = (items) => {
   const states = uniqueSorted(items.map((item) => item.state));
   const specialties = uniqueSorted(

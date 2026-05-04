@@ -15,9 +15,17 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
+      const bookingDomain = new URL(
+        CONFIG.BOOKING_URL,
+        window.location.origin
+      ).hostname;
+
       // Letak debug_mode: true supaya data masuk terus ke GA4 DebugView
       gtag('config', 'G-1FVP3S48ST', { 
-        'debug_mode': true 
+        'debug_mode': true,
+        'linker': {
+          'domains': [bookingDomain]
+        }
       });
     </script>
 
